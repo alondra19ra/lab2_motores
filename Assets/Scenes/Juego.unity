@@ -2086,9 +2086,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 790378140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed3f19aa8ecab944f941e52ec642ba10, type: 3}
+  m_Script: {fileID: 11500000, guid: 84918dc2d5099b44ea6ae5db918eed0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movimiento: {fileID: 1516395631}
+  velocidad: 8
 --- !u!1 &847061759
 GameObject:
   m_ObjectHideFlags: 0
@@ -4181,9 +4183,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1800784139}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed3f19aa8ecab944f941e52ec642ba10, type: 3}
+  m_Script: {fileID: 11500000, guid: 84918dc2d5099b44ea6ae5db918eed0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movimiento: {fileID: 132648501}
+  velocidad: 10
 --- !u!61 &1800784142
 BoxCollider2D:
   m_ObjectHideFlags: 0

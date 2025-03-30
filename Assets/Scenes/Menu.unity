@@ -366,7 +366,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 0.46666667, b: 0.9529412, a: 1}
     m_HighlightedColor: {r: 0.7830189, g: 0.7490388, b: 0.7490388, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9433962, g: 0.8134567, b: 0.8134567, a: 1}
+    m_SelectedColor: {r: 0.60189736, g: 0.3272873, b: 0.764151, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9077746000993280000, guid: 9613fae876787a24cab07f20b1894a51, type: 3}
+      - m_Target: {fileID: -4832116224712219825, guid: 3eeae89b0a29dc1448147838a1301ff1, type: 3}
         m_TargetAssemblyTypeName: CambiarDeEsena, Assembly-CSharp
         m_MethodName: CambiarEsena
         m_Mode: 5
@@ -927,7 +927,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 0.46666667, b: 0.9529412, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.6039216, g: 0.32941177, b: 0.7647059, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -947,10 +947,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9077746000993280000, guid: 9613fae876787a24cab07f20b1894a51, type: 3}
+      - m_Target: {fileID: -4832116224712219825, guid: 3eeae89b0a29dc1448147838a1301ff1, type: 3}
         m_TargetAssemblyTypeName: CambiarDeEsena, Assembly-CSharp
-        m_MethodName: Salir
-        m_Mode: 1
+        m_MethodName: CambiarEsena
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1024,7 +1024,7 @@ RectTransform:
   m_GameObject: {fileID: 1814430844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.33, y: 1.4, z: 0.79}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 67967659}
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jump
+  m_text: ' JUMP COLOR'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1081,7 +1081,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 110
+  m_fontSize: 69.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -446,6 +446,7 @@ GameObject:
   - component: {fileID: 132648504}
   - component: {fileID: 132648503}
   - component: {fileID: 132648502}
+  - component: {fileID: 132648505}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -525,6 +526,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1791279078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &132648505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132648501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3297143f252c1474091f4b1459bde3b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NuevoMovimiento: {fileID: 1410462627}
 --- !u!1 &166476942
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,9 +1114,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 431040314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356f56f6ef36f7241a2a9584d4d6747a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3297143f252c1474091f4b1459bde3b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NuevoMovimiento: {fileID: 1516395631}
 --- !u!61 &431040317
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2286,7 +2301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1089445209}
   - component: {fileID: 1089445208}
-  - component: {fileID: 1089445207}
+  - component: {fileID: 1089445210}
   m_Layer: 0
   m_Name: GameObject (3)
   m_TagString: Untagged
@@ -2294,18 +2309,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1089445207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089445206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356f56f6ef36f7241a2a9584d4d6747a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1089445208
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2366,6 +2369,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1791279078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089445210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089445206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3297143f252c1474091f4b1459bde3b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NuevoMovimiento: {fileID: 431040314}
 --- !u!114 &1214157351 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -4832116224712219825, guid: 3eeae89b0a29dc1448147838a1301ff1, type: 3}
@@ -2992,9 +3008,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1410462627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356f56f6ef36f7241a2a9584d4d6747a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3297143f252c1474091f4b1459bde3b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NuevoMovimiento: {fileID: 132648501}
 --- !u!61 &1410462629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3440,9 +3457,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1516395631}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356f56f6ef36f7241a2a9584d4d6747a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3297143f252c1474091f4b1459bde3b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NuevoMovimiento: {fileID: 1089445206}
 --- !u!61 &1516395633
 BoxCollider2D:
   m_ObjectHideFlags: 0

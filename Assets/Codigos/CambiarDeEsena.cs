@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CambiarDeEsena : MonoBehaviour
 {
-    public void CambiarEsena(string Name)
+    public void CambiarEsena(string Juego)
     {
-        SceneManager.LoadScene(Name);
+        SceneManager.LoadScene(Juego);
     }
     public void Salir()
     {

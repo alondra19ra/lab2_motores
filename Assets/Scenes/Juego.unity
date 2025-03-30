@@ -298,9 +298,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 54245702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0599ecc185226140badee2d3086865e, type: 3}
+  m_Script: {fileID: 11500000, guid: 80c063e4e17c9ac49b1e8ad2cf5bd4f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Jugador: {fileID: 1993211861}
+  color: {r: 0.04150939, g: 0.8413811, b: 1, a: 0.98039216}
 --- !u!1 &89034949
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +447,6 @@ GameObject:
   m_Component:
   - component: {fileID: 132648504}
   - component: {fileID: 132648503}
-  - component: {fileID: 132648502}
   - component: {fileID: 132648505}
   m_Layer: 0
   m_Name: GameObject
@@ -454,18 +455,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &132648502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132648501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356f56f6ef36f7241a2a9584d4d6747a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &132648503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2980,9 +2969,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1380658853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0599ecc185226140badee2d3086865e, type: 3}
+  m_Script: {fileID: 11500000, guid: 80c063e4e17c9ac49b1e8ad2cf5bd4f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Jugador: {fileID: 1993211861}
+  color: {r: 0.69710404, g: 0.14528298, b: 1, a: 1}
 --- !u!1 &1410462627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3257,9 +3248,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458226896}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ffe7bfc4155fcb4d95f8e2cb96b2f17, type: 3}
+  m_Script: {fileID: 11500000, guid: ffab03987d6553d4a90c6ffcdab1ddbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 760958544}
+  texto: {fileID: 255183869}
 --- !u!114 &1458226899
 MonoBehaviour:
   m_ObjectHideFlags: 0

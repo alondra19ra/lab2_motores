@@ -30,11 +30,11 @@ public class Player : MonoBehaviour
         prota = GetComponent<Rigidbody2D>();
         Renderer = GetComponent<SpriteRenderer>();
     }
-    private void Update( )
+    private void Update()
     {
         scrollbar.size = vidas / maxVida;
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             saltar = true;
         }
@@ -110,9 +110,10 @@ public class Player : MonoBehaviour
     {
         Time.timeScale = a;
     }
-    public void ReadDireccion(InputAction.CallbackContext Context) 
+    public void ReadDireccion(InputAction.CallbackContext Context)
     {
         horizontal = Context.ReadValue<float>();
+        Debug.Log("Movimiento detectado: " + horizontal);
     }
     public void ReadJump(InputAction.CallbackContext Context)
     {

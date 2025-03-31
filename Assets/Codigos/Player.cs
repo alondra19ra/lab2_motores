@@ -113,7 +113,7 @@ public class Player : MonoBehaviour
     public void ReadDireccion(InputAction.CallbackContext Context)
     {
         horizontal = Context.ReadValue<float>();
-        Debug.Log("Movimiento detectado: " + horizontal);
+        //Debug.Log("Movimiento detectado: " + horizontal);
     }
     public void ReadJump(InputAction.CallbackContext Context)
     {

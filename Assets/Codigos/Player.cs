@@ -62,10 +62,10 @@ public class Player : MonoBehaviour
         scrollbar.size = vidas / maxVida;
         textoPuntos.text = "Puntos: " + puntos;
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            saltar = true;
-        }
+        //*if (Input.GetKeyDown(KeyCode.Space))
+        //{
+           // saltar = true;
+        //}
 
         if (vidas <= 0)
         {
@@ -73,7 +73,6 @@ public class Player : MonoBehaviour
             TiempoDelJuego(0);
         }
     }
-
     private void FixedUpdate()
     {
         prota.velocity = new Vector2(horizontal * velocidad, prota.velocity.y);
@@ -91,6 +90,7 @@ public class Player : MonoBehaviour
                 prota.AddForce(new Vector2(0, fuerzaSalto), ForceMode2D.Impulse);
                 dosSaltos = false;
             }
+            saltar = false;
         }
     }
 
@@ -105,10 +105,6 @@ public class Player : MonoBehaviour
         {
             unSalto = true;
             dosSaltos = true;
-        }
-        else
-        {
-            unSalto = false;
         }
     }
 
@@ -171,6 +167,10 @@ public class Player : MonoBehaviour
         if (Context.performed)
         {
             unSalto = true;
+        }
+        if(unSalto || dosSaltos)
+        {
+            saltar = true;
         }
     }
 

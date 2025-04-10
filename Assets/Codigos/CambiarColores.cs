@@ -11,3 +11,5 @@ public class CambiarColores : MonoBehaviour
         Jugador.GetComponent<SpriteRenderer>().color = color;
     }
 }
+
+

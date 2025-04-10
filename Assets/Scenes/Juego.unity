@@ -6929,6 +6929,24 @@ MonoBehaviour:
   button: {fileID: 1800952334}
   boton: {fileID: 1914556049}
   puntos: 0
+  cambiarColorIzquierda:
+    m_Name: Cambiar Color Izquierda
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f3c8fb23-0b92-4fc8-806d-d4f7edee0d46
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  cambiarColorDerecha:
+    m_Name: Cambiar Color Derecha
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1c4b659b-1095-43c9-9f3c-ed10ae620bb8
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!61 &1993211863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7126,6 +7144,50 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 585ecfc0-dda1-4c02-96b8-055f06284a0d
     m_ActionName: control/Move[/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1930796303}
+        m_TargetAssemblyTypeName: CambiarColores, Assembly-CSharp
+        m_MethodName: CambiarDeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1380658855}
+        m_TargetAssemblyTypeName: CambiarColores, Assembly-CSharp
+        m_MethodName: CambiarDeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1c84ee5b-5718-489a-9f10-48cd36f8a82b
+    m_ActionName: control/CambiarColorIzquierda[/Keyboard/leftArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 54245704}
+        m_TargetAssemblyTypeName: CambiarColores, Assembly-CSharp
+        m_MethodName: CambiarDeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 977c09a2-2387-4f06-898d-b6d7e1df1fd9
+    m_ActionName: control/CambiarColorDerecha[/Keyboard/rightArrow]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: control

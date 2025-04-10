@@ -39,14 +39,26 @@ public class Player : MonoBehaviour
     public int puntos = 0;
 
     // Otros
-    SpriteRenderer Renderer;
+    
+    private int colorIndex = 0;
+    private Color[] colores = { new Color(0.5f, 0f, 0.5f), new Color(0.4f, 0.8f, 1f), new Color(1f, 1f, 0f) };
+
+    private SpriteRenderer Renderer;
+
+    public InputAction cambiarColorIzquierda;
+    public InputAction cambiarColorDerecha;
 
     #region Unity Functions
 
     private void Awake()
     {
+        
         prota = GetComponent<Rigidbody2D>();
         Renderer = GetComponent<SpriteRenderer>();
+
+        cambiarColorIzquierda.performed += CambiarColorIzquierda;
+        cambiarColorDerecha.performed += CambiarColorDerecha;
+
     }
 
     private void Start()
@@ -168,6 +180,35 @@ public class Player : MonoBehaviour
             saltar = true;
         }
     }
+    private void CambiarColorIzquierda(InputAction.CallbackContext context)
+    {
+        colorIndex--; 
+        if (colorIndex < 0)
+        {
+            colorIndex = colores.Length - 1;
+        }
+
+        if (colorIndex >= 0)
+        {
+            Renderer.color = colores[colorIndex];
+        }
+    }
+
+    private void CambiarColorDerecha(InputAction.CallbackContext context)
+    {
+        colorIndex++; 
+
+        if (colorIndex >= colores.Length)
+        {
+            colorIndex = 0;
+        }
+
+        if (colorIndex >= 0)
+        {
+            Renderer.color = colores[colorIndex];
+        }
+    }
+
 
     public void TiempoDelJuego(int a)
     {

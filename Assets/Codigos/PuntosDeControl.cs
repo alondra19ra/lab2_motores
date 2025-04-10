@@ -7,9 +7,14 @@ public class PuntosDeControl : MonoBehaviour
     public GameObject NuevoMovimiento;
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "enemy")
+        if (collision.gameObject.CompareTag("enemy"))
         {
-            collision.gameObject.GetComponent<Enemigo>().SigientePuntoDeControl(NuevoMovimiento);
+            Enemigo enemigo = collision.gameObject.GetComponent<Enemigo>();
+
+            if (enemigo != null)
+            {
+                enemigo.SiguientePuntoDeControl(NuevoMovimiento);
+            }
         }
     }
 }

@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
     public int puntos = 0;
 
     // Otros
+    public List<GameObject> enemigos;
     
     private int colorIndex = 0;
     private Color[] colores = { new Color(0.5f, 0f, 0.5f), new Color(0.4f, 0.8f, 1f), new Color(1f, 1f, 0f) };
@@ -191,6 +192,8 @@ public class Player : MonoBehaviour
         if (colorIndex >= 0)
         {
             Renderer.color = colores[colorIndex];
+            ControlarTiempoEnemigos();
+            CambioGlobalEnemigos();
         }
     }
 
@@ -206,9 +209,40 @@ public class Player : MonoBehaviour
         if (colorIndex >= 0)
         {
             Renderer.color = colores[colorIndex];
+            ControlarTiempoEnemigos();
+            CambioGlobalEnemigos();
         }
     }
+    private void ControlarTiempoEnemigos()
+    {
+        foreach (var enemigo in enemigos)
+        {
+            if (enemigo.GetComponent<SpriteRenderer>().color == Renderer.color)
+            {
+                enemigo.GetComponent<Enemigo>().DetenerMovimiento();
+            }
+            else
+            {
+                enemigo.GetComponent<Enemigo>().ReanudarMovimiento();
+            }
+        }
+    }
+    private void CambioGlobalEnemigos()
+    {
+        foreach (var enemigo in enemigos)
+        {
+            Color colorNuevo = ObtenerColorDistinto(enemigo.GetComponent<SpriteRenderer>().color);
+            enemigo.GetComponent<Enemigo>().CambiarColor(colorNuevo);
+        }
+    }
+    private Color ObtenerColorDistinto(Color colorActual)
+    {
+        List<Color> coloresDisponibles = new List<Color>(colores);
+        coloresDisponibles.Remove(colorActual); 
 
+        int indice = Random.Range(0, coloresDisponibles.Count);
+        return coloresDisponibles[indice];
+    }
 
     public void TiempoDelJuego(int a)
     {

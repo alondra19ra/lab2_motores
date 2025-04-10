@@ -62,11 +62,6 @@ public class Player : MonoBehaviour
         scrollbar.size = vidas / maxVida;
         textoPuntos.text = "Puntos: " + puntos;
 
-        //*if (Input.GetKeyDown(KeyCode.Space))
-        //{
-           // saltar = true;
-        //}
-
         if (vidas <= 0)
         {
             perdiste.SetActive(true);
